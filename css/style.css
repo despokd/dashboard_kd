@@ -1,0 +1,356 @@
+/**
+ * General
+ */
+:root {
+    --project-primary: #212529;
+    --project-secondary: #fff;
+    --project-accent: #007bff;
+    --project-text: #212529;
+
+    --project-dark-primary: #6c757d;
+    --project-dark-secondary: #fff;
+    --project-dark-accent: #007bff;
+    --project-dark-text: #6c757d;
+
+    --feed-white-background: var(--white);
+    --feed-transparent-background: linear-gradient(180deg, rgba(255,255,255,0.896796218487395) 57%, rgba(255,255,255,0.938813025210084) 100%);
+    --feed-border-radius: 5px;
+    --feed-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+
+    --font-size-s: 1rem;
+    --font-size-m: 1.5rem;
+    --font-size-l: 1.75rem;
+}
+
+
+#head {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+
+/*
+ * darkmode.js
+ */
+button.darkmode-toggle {
+    z-index: 100;
+}
+
+.darkmode-layer.darkmode-layer--button {
+    z-index: 100;
+}
+
+.darkmode-background {
+    background-image:
+            linear-gradient(180deg, rgba(255,255,255,1) 20%, rgba(255,255,255,0.6278886554621849) 100%),
+            url("https://picsum.photos/1920/1020") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.darkmode--activated {
+    color: var(--project-dark-text);
+}
+
+
+
+/**
+ * Clock Date
+ */
+#clockDate {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#clockDiv {
+    margin-top: -8px;
+    margin-left: -7px;
+    padding-right: 20px;
+}
+
+#hour,
+#minute,
+#clockDivider-1 {
+    font-size: 70px;
+    line-height: 70px;
+}
+
+#seconds {
+    font-size: 60px;
+}
+
+#clockDivider-2 {
+    display: none;
+}
+
+#date {
+    font-size: 30px;
+}
+
+#dateDivider-1 {
+    display: none;
+}
+
+#month,
+#dateDivider-2,
+#day,
+#dateDivider-3,
+#year {
+    margin-top: -20px;
+    font-size: 15px;
+}
+
+#weekday {
+    display: table;
+    margin-bottom: -20px;
+    margin-top: -2px;
+}
+
+
+
+/**
+ * Shortcuts
+ */
+.shortcut-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.shortcut-link {
+    text-align: center;
+}
+
+
+
+/**
+ * Feeds
+ */
+/* feed default content while loading */
+.feed-content-load,
+.feed-content-empty {
+    height: 640px;
+}
+
+.feed-empty {
+    text-align: center;
+    color: var(--gray);
+    padding-top: 90px;
+}
+
+.feed-empty-icon {
+    font-size: var(--font-size-m);
+}
+
+.feed-name {
+    font-size: var(--font-size-l);
+}
+
+.feed-update {
+    float: right;
+    cursor: pointer;
+    font-size: var(--font-size-s);
+}
+
+.feed-content {
+    background: var(--feed-white-background);
+    background: var(--feed-transparent-background);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: var(--feed-border-radius);
+    box-shadow: var(--feed-box-shadow);
+    min-height: 310px;
+    max-height: 640px;
+    overflow-y: auto;
+}
+
+.feed-copyright {
+    text-align: center;
+    position: absolute;
+    bottom: 35px;
+    color: var(--gray);
+    font-size: var(--font-size-s);
+}
+
+.feed-copyright img {
+    width: 65px;
+    border: 1px solid lightgray;
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: -3px;
+}
+
+
+/* weather */
+#weather-widget {
+    height: 584px;
+}
+
+#weather-current-icon {
+    margin: -24px 10px 0 0;
+}
+
+#weather-current-temp-real {
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-top: 4px;
+    margin-bottom: -6px;
+}
+
+#weather-current-detail table {
+    width: 100%;
+}
+
+#weather-current-detail td {
+    padding: 5px;
+}
+
+#weather-forecast table {
+    font-size: large;
+    width: 100%;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+#weather-forecast td {
+    height: 64px;
+    vertical-align: center;
+    padding: 5px;
+}
+
+#weather-forecast .cell-icon {
+    padding-left: 20px;
+}
+
+#weather-forecast .cell-unit,
+#weather-forecast .cell-name,
+#weather-forecast .cell-icon {
+    padding-top: 22px;
+}
+
+.cell-icon {
+    text-align: center;
+    width: 20px;
+}
+.cell-name {
+    text-align: left;
+    width: 59px;
+}
+.cell-unit {
+    text-align: right;
+    width: 71px;
+}
+
+/* news */
+.news-scroll {
+    overflow-y: auto;
+    max-height: 250px;
+}
+
+.article {
+    margin-bottom: 20px;
+}
+
+.article ul,
+.article ol {
+    padding-inline-start: 20px;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/**
+ * Footer
+ */
+#footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/**
+ * Cookie alert
+ */
+#myCookieConsent {
+    z-index: 99;
+    min-height: 20px;
+    padding: 10px 20px;
+    background: var(--feed-transparent-background);
+    box-shadow: var(--feed-box-shadow);
+    overflow: hidden;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    display: none;
+    left: 0;
+    text-align: center;
+}
+#myCookieConsent div {
+    padding: 3px 0 0;
+}
+#myCookieConsent a {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#myCookieConsent a#cookieButton {
+    display: inline-block;
+    background: var(--blue);
+    color: var(--white);
+    transition: 1s;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 2px 20px;
+    float: right;
+    border-radius: 20px;
+}
+#myCookieConsent a#cookieButton:hover {
+    background: var(--feed-transparent-background);
+    color: var(--blue);
+}
+
+@media (min-width: 900px) {
+    #cookieButton {
+        margin-right: 12px;
+        margin-left: -136px;
+    }
+}

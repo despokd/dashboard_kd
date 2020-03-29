@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f2c3de2-a7df-420f-a7ec-ae19c17f656c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YluDvNVceevCs8swSQG0C2rmDG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/Program Files/nodejs/node_modules/npm" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="C:/Program Files/nodejs/node_modules/npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\cherr\xampp\htdocs\dashboard_kd" />
+      <recent name="D:\cherr\xampp\htdocs\dashboard_kd\php" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\cherr\xampp\htdocs\dashboard_kd" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f2c3de2-a7df-420f-a7ec-ae19c17f656c" name="Default Changelist" comment="" />
+      <created>1583529385672</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583529385672</updated>
+      <workItem from="1583529386899" duration="1343000" />
+      <workItem from="1583603780589" duration="24256000" />
+      <workItem from="1583670481094" duration="32346000" />
+      <workItem from="1583787729297" duration="10378000" />
+      <workItem from="1583872888365" duration="1088000" />
+      <workItem from="1584196692919" duration="45004000" />
+      <workItem from="1585485456665" duration="21000" />
+      <workItem from="1585485486979" duration="514000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1058" y="589" width="444" height="384" key="ComposerInitDialogKey" timestamp="1584224701888">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="1058" y="589" width="444" height="384" key="ComposerInitDialogKey/0.0.2560.1409/-1920.0.1920.1050@0.0.2560.1409" timestamp="1584224701888" />
+    <state x="1061" y="447" key="FileChooserDialogImpl" timestamp="1585485854192">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="1061" y="447" key="FileChooserDialogImpl/0.0.2560.1409/-1920.0.1920.1050@0.0.2560.1409" timestamp="1583695703634" />
+    <state x="1061" y="447" key="FileChooserDialogImpl/0.0.2560.1409/-1920.227.1920.1050@0.0.2560.1409" timestamp="1585485854192" />
+    <state x="1148" y="599" width="457" height="212" key="Github.ShareDialog" timestamp="1585485980152">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="1148" y="599" width="457" height="212" key="Github.ShareDialog/0.0.2560.1409/-1920.227.1920.1050@0.0.2560.1409" timestamp="1585485980152" />
+    <state x="1117" y="629" key="NewPhpFileDialog" timestamp="1584239962183">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="-1082" y="469" key="NewPhpFileDialog/0.0.2560.1409/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1583608148746" />
+    <state x="1117" y="629" key="NewPhpFileDialog/0.0.2560.1409/-1920.0.1920.1050@0.0.2560.1409" timestamp="1584239962183" />
+    <state x="782" y="348" key="SettingsEditor" timestamp="1585485864887">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="782" y="348" key="SettingsEditor/0.0.2560.1409/-1920.0.1920.1050@0.0.2560.1409" timestamp="1583695705668" />
+    <state x="782" y="348" key="SettingsEditor/0.0.2560.1409/-1920.227.1920.1050@0.0.2560.1409" timestamp="1585485864887" />
+    <state x="1036" y="550" key="cloudConfig.SelfSettingsDialog" timestamp="1585485470813">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="1036" y="550" key="cloudConfig.SelfSettingsDialog/0.0.2560.1409/-1920.0.1920.1050@0.0.2560.1409" timestamp="1583604948961" />
+    <state x="1036" y="550" key="cloudConfig.SelfSettingsDialog/0.0.2560.1409/-1920.227.1920.1050@0.0.2560.1409" timestamp="1585485470813" />
+    <state x="977" y="529" key="com.intellij.ide.util.TipDialog" timestamp="1585485487035">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="977" y="529" key="com.intellij.ide.util.TipDialog/0.0.2560.1409/-1920.0.1920.1050@0.0.2560.1409" timestamp="1584196770725" />
+    <state x="977" y="529" key="com.intellij.ide.util.TipDialog/0.0.2560.1409/-1920.227.1920.1050@0.0.2560.1409" timestamp="1585485487035" />
+    <state x="1023" y="349" key="refactoring.ChangeSignatureDialog" timestamp="1583606339967">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="1023" y="349" key="refactoring.ChangeSignatureDialog/0.0.2560.1409/-1920.0.1920.1050@0.0.2560.1409" timestamp="1583606339967" />
+    <state x="937" y="333" key="run.anything.popup" timestamp="1583789608422">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="937" y="333" key="run.anything.popup/0.0.2560.1409/-1920.0.1920.1050@0.0.2560.1409" timestamp="1583789608422" />
+    <state x="943" y="318" width="672" height="678" key="search.everywhere.popup" timestamp="1584229706486">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="943" y="318" width="672" height="678" key="search.everywhere.popup/0.0.2560.1409/-1920.0.1920.1050@0.0.2560.1409" timestamp="1584229706486" />
+  </component>
+</project>
