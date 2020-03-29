@@ -10,6 +10,7 @@ require_once "travel.php";
 require_once "wallpaper.php";
 require_once "weather.php";
 require_once "../libraries/rss-php/feed.php";
+include "../sensitveData.php";
 
 //feed type
 $feedType = $_REQUEST["feedType"];
@@ -30,6 +31,7 @@ try {
  */
 function updateFeed($feedType) {
     $htmlOutput = "";
+    global $weatherApiKey;
 
     //call functions
     switch ($feedType) {
@@ -50,7 +52,7 @@ function updateFeed($feedType) {
             $htmlOutput .= createTravelFeed("dvb");
             break;
         case "weather":
-            $htmlOutput .= createWeatherFeed("d27114e2008540789ba220443201403","Dresden", "en", true, true, true);
+            $htmlOutput .= createWeatherFeed($weatherApiKey,"Dresden", "en", true, true, true);
             break;
         default:
             //wrong feed type
