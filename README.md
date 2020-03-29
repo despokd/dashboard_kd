@@ -1,15 +1,15 @@
-#dashboard_kd
+# dashboard_kd
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Web dashboard for news, weather and departures
 
 Live on [dashboard.tequilian.de](http://dashboard.tequilian.de/dashboard.php)
 
-##Current state
+## Current state
 Simple PHP, JS Project.
 Next step is integrating with Yii Framework.
 
-##Thanks to following libraries and helpers
+## Thanks to following libraries and helpers
 - [Darkmode.js](https://darkmodejs.learn.uno/)
 - [Bootstrap 4](https://getbootstrap.com/)
 - [jQuery 3.4](https://jquery.com/)
