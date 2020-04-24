@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f2c3de2-a7df-420f-a7ec-ae19c17f656c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -11,9 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="dashboard_kd" />
@@ -31,7 +28,6 @@
   <component name="ProjectId" id="1YluDvNVceevCs8swSQG0C2rmDG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -71,12 +67,14 @@
       <workItem from="1585485456665" duration="21000" />
       <workItem from="1585485486979" duration="514000" />
       <workItem from="1585486929879" duration="6691000" />
-      <workItem from="1585494758478" duration="290000" />
+      <workItem from="1585494758478" duration="3864000" />
+      <workItem from="1586789247844" duration="5019000" />
+      <workItem from="1587714087539" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="861" y="437" key="#CLI_Interpreters" timestamp="1585494503991">
