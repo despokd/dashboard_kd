@@ -101,16 +101,16 @@ function createWeatherFeed($apiKey, $location = "Dresden", $language = "en", $is
                 $htmlOutput .= "<div id='weather-current-overview' class='d-flex flex-row'>";
 
                     //create current weather icon
-                    $htmlOutput .= "<div id='weather-current-icon'><img src='" . str_replace("64", "128", $weather->current->condition->icon) . "' alt='Weather condition is " . $weather->current->condition->text . "' title='Weather condition is " . $weather->current->condition->text . "'></div>";
+                    $htmlOutput .= "<div id='weather-current-icon'><img src='" . str_replace('64', '128', $weather->current->condition->icon) . "' alt='Weather condition is " . $weather->current->condition->text . "' title='Weather condition is " . $weather->current->condition->text . "'></div>";
 
                     //create current weather quick info
-                    $htmlOutput .= "<div id='weather-current-quick' class='d-flex flex-column'>";
+                    $htmlOutput .= "<div id='weather-current-quick' class='d-flex flex-column align-self-center'>";
                         $htmlOutput .= "<div id='weather-current-temp-real'>$current_temp_real</div>";
                         $htmlOutput .= "<div id='weather-current-temp-feel'>$current_temp_felt felt</div>";
-                    $htmlOutput .= "</div>";
+                    $htmlOutput .= '</div>';
 
                 //end current weather overview container
-                $htmlOutput .= "</div>";
+                $htmlOutput .= '</div>';
 
                 //create more detail info for current weather
                 $htmlOutput .= "<div id='weather-current-detail'>
@@ -140,7 +140,7 @@ function createWeatherFeed($apiKey, $location = "Dresden", $language = "en", $is
                                         <tr>
                                             <td class='cell-icon'><i class='far fa-sun'></i></td>
                                             <td class='cell-name'>Rise</td>
-                                            <td class='cell-unit'>" . date("G:i",strtotime($weather->forecast->forecastday[0]->astro->sunrise)) . "</td>
+                                            <td class='cell-unit'>" . date('G:i',strtotime($weather->forecast->forecastday[0]->astro->sunrise)) . "</td>
                                             
                                             <td class='cell-space'</td>
                                             
@@ -151,7 +151,7 @@ function createWeatherFeed($apiKey, $location = "Dresden", $language = "en", $is
                                         <tr>
                                             <td class='cell-icon'><i class='far fa-moon'></i></td>
                                             <td class='cell-name'>Set</td>
-                                            <td class='cell-unit'>" . date("G:i",strtotime($weather->forecast->forecastday[0]->astro->sunset)) . "</td>
+                                            <td class='cell-unit'>" . date('G:i',strtotime($weather->forecast->forecastday[0]->astro->sunset)) . "</td>
                                             
                                             <td class='cell-space'</td>
                                             
@@ -163,12 +163,12 @@ function createWeatherFeed($apiKey, $location = "Dresden", $language = "en", $is
                                 </div>";
 
             //end current weather container
-            $htmlOutput .= "</div><hr>";
+            $htmlOutput .= '</div><hr>';
 
 
             //create forecast weather container
             $htmlOutput .= "<div id='weather-forecast' class='d-flex flex-column'>";
-            $htmlOutput .= "<table>";
+            $htmlOutput .= '<table>';
 
             //for 3-day forecast
             for ($i = 0; $i < 3; $i++) {
@@ -177,23 +177,27 @@ function createWeatherFeed($apiKey, $location = "Dresden", $language = "en", $is
                     //create icon
                     $htmlOutput .= "<td class='weather-forecast-icon'><img src='" . $weather->forecast->forecastday[$i]->day->condition->icon . "' alt='Weather condition is " . $weather->forecast->forecastday[$i]->day->condition->text . "' title='Weather condition is " . $weather->forecast->forecastday[$i]->day->condition->text . "'></td>";
                     //create params
-                    $htmlOutput .= "<td class='cell-name weather-forecast-weekday'>" . date("D", $weather->forecast->forecastday[$i]->date_epoch) . "</td>";
+                    $htmlOutput .= "<td class='cell-name weather-forecast-weekday'>" . date('D', $weather->forecast->forecastday[$i]->date_epoch) . '</td>';
                     $htmlOutput .= "<td class='cell-icon'><i class='fas fa-thermometer-half'></i></td>
-                                    <td class='cell-unit weather-forecast-temp'> " . $forecast[$i]["temp"] . "</td>";
+                                    <td class='cell-unit weather-forecast-temp'> " . $forecast[$i]['temp'] . '</td>';
                     $htmlOutput .= "<td class='cell-icon'><i class='fas fa-cloud-showers-heavy'></i></td>
-                                    <td class='cell-unit weather-forecast-rain'> " . $weather->forecast->forecastday[$i]->day->avghumidity . " %</td>";
+                                    <td class='cell-unit weather-forecast-rain'> " . $weather->forecast->forecastday[$i]->day->avghumidity . ' %</td>';
                 //end day forecast
-                $htmlOutput .= "</tr>";
+                $htmlOutput .= '</tr>';
             }
 
             //end forecast weather container
-            $htmlOutput .= "</table>";
-            $htmlOutput .= "</div>";
+            $htmlOutput .= '</table>';
+            $htmlOutput .= '</div>';
 
             //end DIV container for weather
-            $htmlOutput .= "<div id='weatherApi' class='feed-copyright'><a href='https://www.weatherapi.com/' title='Free Weather API' target='_blank'><img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt='Weather data by WeatherAPI.com'></a></div>";
-        $htmlOutput .= "</div>";
-    $htmlOutput .= "</div>";
+            $htmlOutput .= "<div id='weatherApi' class='feed-copyright'>
+                                <a class='weatherApi-link' href='https://www.weatherapi.com/' title='Free Weather API' target='_blank'>
+                                    <img src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt='Weather data by WeatherAPI.com'>
+                                </a>
+                            </div>";
+        $htmlOutput .= '</div>';
+    $htmlOutput .= '</div>';
 
     return $htmlOutput;
 }

@@ -10,12 +10,15 @@
     --project-dark-primary: #6c757d;
     --project-dark-secondary: #fff;
     --project-dark-accent: #007bff;
-    --project-dark-text: #6c757d;
+    --project-dark-text: #ced1d2;
 
     --feed-white-background: var(--white);
-    --feed-transparent-background: linear-gradient(180deg, rgba(255, 255, 255, 0.82) 28%, rgba(255, 255, 255, 0.45) 100%);
+    --feed-white-transparent-background: linear-gradient(180deg, rgba(255, 255, 255, 0.82) 28%, rgba(255, 255, 255, 0.45) 100%);
+    --feed-dark-background: var(--dark);
+    --feed-dark-transparent-background: linear-gradient(180deg, rgba(0, 0, 0, 0.82) 20%, rgba(0, 0, 0, 0.62) 100%);
     --feed-border-radius: 5px;
     --feed-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    --feed-content-background: rgba(255, 255, 255, 0.91);
 
     --blue: #007bff;
     --indigo: #6610f2;
@@ -53,12 +56,66 @@
     --font-size-l: 1.75rem;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    transition: background-image 1s;
+}
+
+body,a,h1,h2,h3,h4,h5,h6 {
+    transition: color 1s;
+}
 
 #head {
     padding-top: 20px;
     padding-bottom: 40px;
 }
 
+a:not([class]).focus, a:not([class]):focus, a:not([class]):hover,
+.shortcut-name:focus, .shortcut-name:hover {
+    background-size: 100% 88%;
+    color: initial;
+}
+
+a:not([class]),
+a .shortcut-name,
+a .article-title {
+    font-weight: 500;
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(135, 212, 243, 0.66)),to(rgba(255, 255, 255, 0.05)));
+    background-image: linear-gradient(90deg, rgba(127, 189, 236, 0.64), rgba(255, 255, 255, 0.05));
+    background-repeat: no-repeat;
+    background-size: 100% .2em;
+    background-position: 0 88%;
+    -webkit-transition: background-size .25s ease-in;
+    transition: background-size .25s ease-in, color 1s;
+    color: var(--project-text);
+}
+
+.darkmode--activated a:not([class]),
+.darkmode--activated a .shortcut-name,
+.darkmode--activated a .article-title {
+    color: var(--project-dark-text);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(246, 129, 65, 0.66)),to(rgba(255, 255, 255, 0.05)));
+    background-image: linear-gradient(90deg, rgba(252, 127, 45, 0.64), rgba(255, 255, 255, 0.05));
+}
+
+a .article-title {
+    font-weight: initial;
+    background-position: 0 95%;
+}
+
+a .article-title:focus, a .article-title:hover {
+    background-size: 100% 125%;
+}
+
+
+a:hover, a:focus {
+    text-decoration: none;
+}
 
 
 /*
@@ -72,20 +129,58 @@ button.darkmode-toggle {
     z-index: 100;
 }
 
-.darkmode-background {
+body:not(.darkmode--activated) {
     background-image: 
     linear-gradient(162deg, rgba(166,193,238,1) 5%, rgba(251,194,235,0.933677865677521) 43%, rgba(251,194,235,0.4574873894870448) 70%, rgba(251,194,235,0.08213724943102241) 100%),
         url("https://picsum.photos/1920/1020") !important;
 
     background-size: cover !important;
-    background-position: center !important;
     background-repeat: no-repeat !important;
+}
+
+body {
+    background-image:
+            linear-gradient(162deg, rgb(61, 40, 147) 5%, rgba(76, 85, 168, 0.94) 43%, rgba(77, 146, 143, 0.8) 70%, rgba(100, 168, 165, 0.75) 100%),
+            url("https://picsum.photos/1920/1020") !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.darkmode-background,
+.darkmode-layer {
+    background: none !important;
 }
 
 .darkmode--activated {
     color: var(--project-dark-text);
 }
 
+
+
+/**
+ * Custom Scrollbar (not supported by Firefox)
+ */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #e2e2e2;
+    border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a3a3a3;
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #5f5f5f;
+}
 
 
 /**
@@ -97,7 +192,7 @@ button.darkmode-toggle {
 }
 
 #clockDiv {
-    margin-top: -8px;
+    margin-top: 0;
     margin-left: -7px;
     padding-right: 20px;
 }
@@ -118,7 +213,7 @@ button.darkmode-toggle {
 }
 
 #date {
-    font-size: 30px;
+    font-size: 32px;
 }
 
 #dateDivider-1 {
@@ -130,7 +225,7 @@ button.darkmode-toggle {
 #day,
 #dateDivider-3,
 #year {
-    margin-top: -20px;
+    margin-top: -22px;
     font-size: 15px;
 }
 
@@ -152,6 +247,7 @@ button.darkmode-toggle {
     border-radius: 5px;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 
 .shortcut-link {
@@ -191,7 +287,7 @@ button.darkmode-toggle {
 
 .feed-content {
     background: var(--feed-white-background);
-    background: var(--feed-transparent-background);
+    background: var(--feed-white-transparent-background);
     padding: 10px;
     margin-bottom: 20px;
     border-radius: var(--feed-border-radius);
@@ -199,6 +295,19 @@ button.darkmode-toggle {
     min-height: 310px;
     max-height: 640px;
     overflow-y: auto;
+}
+
+.darkmode--activated .feed-content {
+    background: var(--feed-dark-background);
+    background: var(--feed-dark-transparent-background);
+}
+
+.feed-content iframe {
+    border-radius: 2px;
+}
+
+.darkmode--activated .feed-content iframe {
+    background: var(--feed-content-background);
 }
 
 .feed-copyright {
@@ -211,10 +320,14 @@ button.darkmode-toggle {
 
 .feed-copyright img {
     width: 65px;
-    border: 1px solid lightgray;
+    background-color: rgba(255, 255, 255, 0.47);
     padding: 3px;
     border-radius: 5px;
     margin-bottom: -3px;
+}
+
+.darkmode--activated .feed-copyright img {
+    background-color: var(--feed-content-background)
 }
 
 
@@ -224,13 +337,14 @@ button.darkmode-toggle {
 }
 
 #weather-current-icon {
-    margin: -24px 10px 0 0;
+    /* margin: -24px 10px 0 0; */
+    margin-right: 10px;
 }
 
 #weather-current-temp-real {
     font-weight: bolder;
     font-size: xx-large;
-    margin-top: 4px;
+    margin-top: -12px;
     margin-bottom: -6px;
 }
 
@@ -298,6 +412,10 @@ button.darkmode-toggle {
     height: auto;
 }
 
+.article-title {
+    font-size: 17px;
+    font-weight: 500;
+}
 
 
 /**
@@ -306,6 +424,16 @@ button.darkmode-toggle {
 #footer {
     margin-top: 20px;
     margin-bottom: 20px;
+    font-size: 90%;
+}
+
+#footer hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.darkmode--activated #footer hr {
+    background: var(--project-dark-text);
 }
 
 /**
@@ -315,7 +443,7 @@ button.darkmode-toggle {
     z-index: 99;
     min-height: 20px;
     padding: 10px 20px;
-    background: var(--feed-transparent-background);
+    background: var(--feed-white-transparent-background);
     box-shadow: var(--feed-box-shadow);
     overflow: hidden;
     position: sticky;
@@ -325,12 +453,19 @@ button.darkmode-toggle {
     left: 0;
     text-align: center;
 }
+
+.darkmode--activated #myCookieConsent {
+    background: var(--feed-dark-background);
+    background: var(--feed-dark-transparent-background);
+}
+
 #myCookieConsent div {
     padding: 3px 0 0;
 }
 #myCookieConsent a {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0;
+    margin: 0 10px;
 }
 
 #myCookieConsent a#cookieButton {
@@ -345,8 +480,13 @@ button.darkmode-toggle {
     border-radius: 20px;
 }
 #myCookieConsent a#cookieButton:hover {
-    background: var(--feed-transparent-background);
-    color: var(--blue);
+    background: var(--feed-white-background);
+    color: var(--project-text);
+}
+
+.darkmode--activated #myCookieConsent a#cookieButton:hover {
+    background: var(--feed-dark-transparent-background);
+    color: var(--project-dark-text);
 }
 
 @media (min-width: 900px) {

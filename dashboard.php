@@ -4,22 +4,23 @@
  */
 
 //load require function files
-require_once "phpFunctions/feed.php";
+require_once 'phpFunctions/feed.php';
 
 //list of links for shortcuts
 $shortcuts = [];
 //TODO get $shortcuts from database
-$shortcuts[] = ["Netflix", "netflix://", "https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"];
-$shortcuts[] = ["Prime", "https://www.amazon.de/Prime-Video/b?ie=UTF8&node=3279204031", "https://pbs.twimg.com/profile_images/1176422051432861696/_FpLxtU-_400x400.png"];
-$shortcuts[] = ["Youtube", "https://www.youtube.com/", "https://s.ytimg.com/yts/img/favicon_144-vfliLAfaB.png"];
-$shortcuts[] = ["ToDo", "https://to-do.microsoft.com/tasks/myday", "https://to-do-cdn.microsoft.com/webapp/41d71b1f269fe3d9faed2c1b171f85c4b109d01bac89805a9903f99c50af1150/touch-icon-180x180.png"];
+$shortcuts[] = ['Netflix', 'https://www.netflix.com/browse', 'https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico',''];
+$shortcuts[] = ['Disney+', 'https://www.disneyplus.com/de-de/', 'https://prod-static.disney-plus.net/eu-west-1/builds/12f05453babc380d51fabe3a018125ffb8cdbb66_1587566872913/images/logo.svg',''];
+$shortcuts[] = ['Prime', 'https://www.amazon.de/Prime-Video/b?ie=UTF8&node=3279204031', 'https://pbs.twimg.com/profile_images/1176422051432861696/_FpLxtU-_400x400.png',''];
+$shortcuts[] = ['Youtube', 'https://www.youtube.com/', 'https://s.ytimg.com/yts/img/favicon_144-vfliLAfaB.png',''];
+$shortcuts[] = ['ToDo', 'https://to-do.microsoft.com/tasks/myday', 'https://to-do-cdn.microsoft.com/webapp/41d71b1f269fe3d9faed2c1b171f85c4b109d01bac89805a9903f99c50af1150/touch-icon-180x180.png',''];
 
 //list of feeds
 $feeds = [];
 //TODO get $feeds from database
-$feeds[] = ["travel", "Travel"];
-$feeds[] = ["news", "News"];
-$feeds[] = ["weather", "Weather"];
+$feeds[] = ['travel', 'Travel'];
+$feeds[] = ['news', 'News'];
+$feeds[] = ['weather', 'Weather'];
 //$feeds[] = ["tasks", "Tasks"];
 //$feeds[] = ["calendar", "Calendar"];
 
@@ -31,7 +32,7 @@ $feeds[] = ["weather", "Weather"];
 <head>
     <!-- TODO get time (zone) from user -->
     <title>My Dashboard</title>
-    <?php require_once "header.php"; ?>
+    <?php require_once 'header.php'; ?>
 </head>
 <body>
 
