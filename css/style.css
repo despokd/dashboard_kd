@@ -332,7 +332,7 @@ body {
 
 
 /* weather */
-#feed-weather {
+#feed-weather .feed-content {
     overflow-y: hidden;
 }
 #weather-widget {
