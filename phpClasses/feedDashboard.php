@@ -47,7 +47,7 @@ class feedDashboard
         if (!$name) { $name = $type; }
 
         //create container
-        $htmlOutput .= "<div id='feed-$type' class='col-12 col-md-6 col-lg-4 feed'>";
+        $htmlOutput .= "<div id='feed-$type' class='col-12 col-md-6 col-xl-4 feed'>";
         $htmlOutput .= "<div id='feed-$type-head' class='feed-head d-flex align-items-baseline justify-content-between'>
                         <span class='feed-name'>$name</span>
                         <span class='feed-update' onclick='updateFeed(\"$type\")' title='Update $name'>

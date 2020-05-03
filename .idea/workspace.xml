@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f2c3de2-a7df-420f-a7ec-ae19c17f656c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ajax/ajax_updateFeed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpClasses/feedDashboard.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpClasses/newsFeed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpClasses/shortcut.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpClasses/travelFeed.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpClasses/weatherFeed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/cherr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/cherr.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/travel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpFunctions/ajax_updateFeed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpFunctions/calendar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpFunctions/feed.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpFunctions/music.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpFunctions/news.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpFunctions/tasks.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpFunctions/travel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpFunctions/wallpaper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpFunctions/weather.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpClasses/feedDashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpClasses/feedDashboard.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +72,7 @@
       <workItem from="1587714087539" duration="11000" />
       <workItem from="1587809030199" duration="11532000" />
       <workItem from="1587825328178" duration="2000" />
-      <workItem from="1588515091718" duration="16061000" />
+      <workItem from="1588515091718" duration="16697000" />
     </task>
     <servers />
   </component>
