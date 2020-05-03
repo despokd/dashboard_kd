@@ -3,7 +3,7 @@
 
 Web dashboard for news, weather and departures
 
-Live on [dashboard.tequilian.de](http://dashboard.tequilian.de/dashboard.php)
+Live on [dashboard.tequilian.de](http://dashboard.tequilian.de)
 
 ## Current state
 Simple PHP, JS Project.
