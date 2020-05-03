@@ -83,7 +83,7 @@ function updateFeed(feedType) {
     $("#spinner-" + feedType).addClass("fa-spin");
 
     $.ajax({
-        url: "./phpFunctions/ajax_updateFeed.php",
+        url: "./ajax/ajax_updateFeed.php",
         data: { feedType: feedType },
         method: "POST"
     })

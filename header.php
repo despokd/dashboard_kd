@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!-- Favicon -->
-<link rel="icon" href="https://tequilian.de/wp-content/uploads/2019/02/cropped-TEQUILIAN_logo_icon_rund-192x192.png" sizes="192x192">
+<link rel="icon" href="favicon.ico">
 
 <!-- Google Font Ubuntu, Josefin Sans -->
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -45,4 +45,3 @@
 
 <!-- Custom JS -->
 <script src="js/script.js"></script>
-<script src="js/travel.js"></script>
