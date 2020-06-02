@@ -116,7 +116,7 @@ class feedDashboard
             case "news":
                 //TODO onetime function writing
                 $htmlOutput .= (new newsFeed())->createNewsFeed("tagesschau");
-                $htmlOutput .= (new newsFeed())->createNewsFeed("heise");
+                $htmlOutput .= (new newsFeed())->createNewsFeed("zdnet");
                 break;
             case "tasks":
                 //TODO call function tasks

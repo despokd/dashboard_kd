@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f2c3de2-a7df-420f-a7ec-ae19c17f656c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/cherr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/cherr.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpClasses/feedDashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpClasses/feedDashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpClasses/newsFeed.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpClasses/newsFeed.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nks" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="C:/Program Files/nodejs/node_modules/npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -71,7 +74,10 @@
       <workItem from="1587714087539" duration="11000" />
       <workItem from="1587809030199" duration="11532000" />
       <workItem from="1587825328178" duration="2000" />
-      <workItem from="1588515091718" duration="17034000" />
+      <workItem from="1588515091718" duration="17726000" />
+      <workItem from="1588536310728" duration="27000" />
+      <workItem from="1589105824445" duration="19000" />
+      <workItem from="1591080644540" duration="163000" />
     </task>
     <servers />
   </component>
@@ -96,9 +102,10 @@
     </state>
     <state x="1058" y="589" width="444" height="384" key="ComposerInitDialogKey/0.0.2560.1409/-1920.0.1920.1050@0.0.2560.1409" timestamp="1584224701888" />
     <state x="1058" y="589" width="444" height="260" key="ComposerInitDialogKey/0.0.2560.1409/-1920.227.1920.1050@0.0.2560.1409" timestamp="1585494549271" />
-    <state x="1061" y="447" key="FileChooserDialogImpl" timestamp="1585493938186">
-      <screen x="0" y="0" width="2560" height="1409" />
+    <state x="1061" y="444" key="FileChooserDialogImpl" timestamp="1589105840821">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="1061" y="444" key="FileChooserDialogImpl/0.0.2560.1400/-1920.506.1920.1040@0.0.2560.1400" timestamp="1589105840821" />
     <state x="1061" y="447" key="FileChooserDialogImpl/0.0.2560.1409/-1920.0.1920.1050@0.0.2560.1409" timestamp="1583695703634" />
     <state x="1061" y="447" key="FileChooserDialogImpl/0.0.2560.1409/-1920.227.1920.1050@0.0.2560.1409" timestamp="1585493938186" />
     <state x="1148" y="599" width="457" height="212" key="Github.ShareDialog" timestamp="1585485980152">
