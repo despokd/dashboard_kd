@@ -45,7 +45,7 @@ $feeds[2] = ['weather', 'Weather'];
 
             <div class="col-12 col-md-6">
                 <div id="linkDiv" class="container">
-                    <div class="row justify-content-end">
+                    <div class="row justify-content-between">
                         <?php
                         foreach ($shortcuts as $shortcut) {
                             echo (new shortcut())->createShortcut($shortcut[0], $shortcut[1], $shortcut[2]);

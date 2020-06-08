@@ -50,7 +50,6 @@ class newsFeed extends feedDashboard
                 $htmlOutput .= '</div>';
 
                 return $htmlOutput;
-
         }
 
         //check rss content
