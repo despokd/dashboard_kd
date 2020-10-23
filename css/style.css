@@ -88,6 +88,11 @@ body {
     background-attachment: fixed;
 }
 
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1400px;
+    }
+}
 
 #head {
     padding-top: 20px;
