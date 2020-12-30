@@ -7,10 +7,10 @@ require "phpClasses/shortcut.php";
 
 //list of links for shortcuts
 $shortcuts = [];
-$shortcuts[0] = ['Netflix', 'https://www.netflix.com/browse', 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Logo_Netflix.png/800px-Logo_Netflix.png',''];
-$shortcuts[1] = ['Prime', 'https://www.amazon.de/Prime-Video/b?ie=UTF8&node=3279204031', 'https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png',''];
-$shortcuts[2] = ['Disney+', 'https://www.disneyplus.com/de-de/', 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg',''];
-$shortcuts[3] = ['YouTube', 'https://www.youtube.com/', 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/71px-YouTube_full-color_icon_%282017%29.svg.png',''];
+$shortcuts[0] = ['Netflix', 'https://www.netflix.com/browse', './img/logos/netflix.png',''];
+$shortcuts[1] = ['Prime', 'https://www.amazon.de/Prime-Video/b?ie=UTF8&node=3279204031', './img/logos/prime.png',''];
+$shortcuts[2] = ['Disney+', 'https://www.disneyplus.com/de-de/', './img/logos/disneyPlus.png',''];
+$shortcuts[3] = ['YouTube', 'https://www.youtube.com/', './img/logos/youTube.png',''];
 
 //list of feeds
 $feeds = [];
