@@ -3,6 +3,8 @@
  * Dashboard start page
  */
 
+error_reporting(-1);
+
 require "phpClasses/shortcut.php";
 
 //list of links for shortcuts
