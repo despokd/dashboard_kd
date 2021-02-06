@@ -5,10 +5,6 @@ Web dashboard for news, weather and departures
 
 Live on [dashboard.tequilian.de](http://dashboard.tequilian.de)
 
-## Current state
-Simple PHP, JS Project.
-Next step is integrating with Yii Framework.
-
 ## Thanks to following libraries and helpers
 - [Darkmode.js](https://darkmodejs.learn.uno/)
 - [Bootstrap 4](https://getbootstrap.com/)

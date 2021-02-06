@@ -8,8 +8,7 @@ require 'weatherFeed.php';
  * Class feedDashboard
  * Generate feeds
  */
-class feedDashboard
-{
+class feedDashboard {
 
     /**
      * Creates empty feed containers
@@ -20,7 +19,7 @@ class feedDashboard
      * @author Kilian Domaratius
      *
      */
-    public function createFeeds ($feedTypes) {
+    public function createFeeds($feedTypes) {
         $htmlOutput = "";
 
         //check feed type
@@ -44,7 +43,9 @@ class feedDashboard
         $htmlOutput = "";
 
         //if name is empty use type
-        if (!$name) { $name = $type; }
+        if (!$name) {
+            $name = $type;
+        }
 
         //create container
         $htmlOutput .= "<div id='feed-$type' class='col-12 col-md-6 col-xl-4 feed'>";
@@ -115,8 +116,8 @@ class feedDashboard
                 break;
             case "news":
                 //TODO onetime function writing
-                $htmlOutput .= (new newsFeed())->createNewsFeed("tagesschau");
-                $htmlOutput .= (new newsFeed())->createNewsFeed("zdnet");
+                $htmlOutput .= (new newsFeed())->createNewsFeed('tagesschau');
+                $htmlOutput .= (new newsFeed())->createNewsFeed('zdnet');
                 break;
             case "tasks":
                 //TODO call function tasks
@@ -126,7 +127,7 @@ class feedDashboard
                 $htmlOutput .= (new travelFeed())->createTravelFeed();
                 break;
             case "weather":
-                $htmlOutput .= (new weatherFeed())->createWeatherFeed($weatherApiKey,"Dresden", "en", true, true, true);
+                $htmlOutput .= (new weatherFeed())->createWeatherFeed($weatherApiKey, "Dresden", "en", true, true, true);
                 break;
             default:
                 //wrong feed type
@@ -137,4 +138,3 @@ class feedDashboard
         return $htmlOutput;
     }
 }
-
