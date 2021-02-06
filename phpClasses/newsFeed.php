@@ -15,7 +15,7 @@ class newsFeed extends feedDashboard {
      * @return  string
      */
     public function createNewsFeed($newsClient) {
-        $htmlOutput = ""
+        $htmlOutput = "";
 
         //list of rss feeds
         $clients = [];
