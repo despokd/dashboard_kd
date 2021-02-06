@@ -4,8 +4,7 @@
  * Class newsFeed
  * Get information about news
  */
-class newsFeed extends feedDashboard
-{
+class newsFeed extends feedDashboard {
     /**
      * Create feed content for travel
      *
@@ -15,7 +14,7 @@ class newsFeed extends feedDashboard
      * @throws  FeedException
      * @return  string
      */
-    public function createNewsFeed ($newsClient) {
+    public function createNewsFeed($newsClient) {
         $htmlOutput = "";
 
         //list of rss feeds
@@ -53,7 +52,7 @@ class newsFeed extends feedDashboard
         }
 
         //check rss content
-        if ( $rss->item === false ) {
+        if ($rss->item === false) {
             //no rss content
             $htmlOutput .= $this->emptyFeed('RSS not supported', true);
         }
