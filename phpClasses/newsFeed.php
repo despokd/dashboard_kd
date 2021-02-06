@@ -29,7 +29,6 @@ class newsFeed extends feedDashboard {
         $htmlOutput .= "<h4 class='feed-contentHeading'>" . $clients[$newsClient][0] . '</h4>';
         $htmlOutput .= "<div class='news-scroll'>";
 
-        return $htmlOutput;
 
 
         //get rss
@@ -59,6 +58,8 @@ class newsFeed extends feedDashboard {
             //no rss content
             $htmlOutput .= $this->emptyFeed('RSS not supported', true);
         }
+
+        var_dump($rss); 
 
         //create feed content
         foreach ($rss->item as $item) {
