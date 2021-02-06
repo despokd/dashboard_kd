@@ -19,7 +19,7 @@ class newsFeed extends feedDashboard {
 
         //list of rss feeds
         $clients = [];
-        $clients['tagesschau'] = array('Tagesschau', 'https://www.tagesschau.de/xml/rss2', 'rss');
+        $clients['tagesschau'] = array('Tagesschau', 'https://www.tagesschau.de/newsticker.rdf', 'rss');
         $clients['heise'] = array('Heise', 'https://www.heise.de/rss/heise.rdf', 'rss');
         $clients['heise-top'] = array('Heise Top News', 'https://www.heise.de/rss/heise-top-atom.xml', 'atom');
         $clients['zdnet'] = array('ZDNet', 'https://www.zdnet.de/feed/', 'rss');
