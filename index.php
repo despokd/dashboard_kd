@@ -21,9 +21,7 @@ $feeds[0] = ['travel', 'Travel'];
 $feeds[1] = ['news', 'News'];
 $feeds[2] = ['weather', 'Weather'];
 
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="de">
