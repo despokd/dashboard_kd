@@ -15,7 +15,6 @@ class newsFeed extends feedDashboard {
      * @return  string
      */
     public function createNewsFeed($newsClient) {
-        return 'test';
         $htmlOutput = "";
 
         //list of rss feeds
@@ -29,6 +28,9 @@ class newsFeed extends feedDashboard {
         $htmlOutput .= "<div class='feed-content'>";
         $htmlOutput .= "<h4 class='feed-contentHeading'>" . $clients[$newsClient][0] . '</h4>';
         $htmlOutput .= "<div class='news-scroll'>";
+
+        return $htmlOutput;
+
 
         //get rss
         switch ($clients[$newsClient][2]) {
