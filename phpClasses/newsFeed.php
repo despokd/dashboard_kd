@@ -59,8 +59,6 @@ class newsFeed extends feedDashboard {
             $htmlOutput .= $this->emptyFeed('RSS not supported', true);
         }
 
-        var_dump($rss); 
-
         //create feed content
         foreach ($rss->item as $item) {
             /* all information
