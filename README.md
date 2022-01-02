@@ -3,7 +3,12 @@
 
 Web dashboard for news, weather and departures
 
-Live on [dashboard.tequilian.de](http://dashboard.tequilian.de)
+Not ~~Live on dashboard.tequilian.de~~
+
+## ToDo
+
+- [ ] move project to Vercel
+- [ ] reqwrite project with JS like Svelte
 
 ## Thanks to following libraries and helpers
 - [Darkmode.js](https://darkmodejs.learn.uno/)
